@@ -1,4 +1,3 @@
-import React from "react";
 
 function Intro() {
   return (
@@ -8,14 +7,13 @@ function Intro() {
       </h1>
 
       <p className="text-base md:text-xl mb-3 font-medium">
-        Software Engineer & Web Developer
+        Projetos de software e experimentos de interface
       </p>
       <p className="text-sm max-w-xl mb-6 font-bold">
-        I am a indie full-stack developer building my version of the digital
-        world one step at a time. I am a self-taught developer who loves to
-        learn and build new things. All coding projects are built from the
-        ground up, from planing and designing all the way to solving real-life
-        problems with code.
+        Laboratório histórico de interfaces em React e TypeScript. Os projetos
+        abaixo demonstram estudos em APIs, backend e frontend; os códigos estão
+        disponíveis para revisão no GitHub. Este experimento não substitui o
+        portfólio SAIRU/BLACKSITE atual.
         <br />
       </p>
     </div>

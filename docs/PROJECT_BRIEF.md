@@ -35,3 +35,14 @@ Experimento pessoal, não portfólio profissional atual. Créditos, fontes de tu
 **Ainda não é:** sistema integrado à KORA, serviço em produção ou prova de maturidade sem testes.
 
 [Voltar ao portfólio SAIRU/BLACKSITE](https://saiiru.github.io/#projetos-independentes)
+
+
+## Verificação de funcionamento — 12/11/2026
+
+**Estado confirmado:** Protótipo React recompilado e revisado
+
+**Evidência:** Node 24 · npm run build; npm run lint; Playwright tela 390px; links de quatro repositórios reais
+
+**Limites e bloqueios:** Protótipo histórico, NÃO é o portfólio principal; sem formulário de contato ativo.
+
+Esta validação não implica integração à KORA nem certificação de produção. Não alterar histórico, licença e autoria dos tutoriais.

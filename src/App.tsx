@@ -1,25 +1,18 @@
 import React, { useEffect, useState } from "react";
-import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Intro from "./components/Intro";
 import Portfolio from "./components/Portfolio";
 import Timeline from "./components/Timeline";
 
-type Theme = "dark" | "light" | null;
+type Theme = "dark" | "light";
 
 const App: React.FC = () => {
-  const [theme, setTheme] = useState<Theme>(null);
-
-  useEffect(() => {
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      setTheme("dark");
-    } else {
-      setTheme("light");
-    }
-  }, []);
+  const [theme, setTheme] = useState<Theme>(() =>
+    window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"
+  );
 
   const handleThemeSwitch = (): void => {
-    setTheme(theme === "dark" ? "light" : "dark");
+    setTheme(current => current === "dark" ? "light" : "dark");
   };
 
   useEffect(() => {
@@ -69,7 +62,9 @@ const App: React.FC = () => {
       <button
         type="button"
         onClick={handleThemeSwitch}
-        className="fixed p-2 z-10 right-20 top-4 bg-violet-300 dark:bg-orange-300 text-lg p-1 rounded-md"
+        aria-label={theme === "dark" ? "Ativar modo claro" : "Ativar modo escuro"}
+        aria-pressed={theme === "dark"}
+        className="fixed p-2 z-10 right-4 top-4 bg-violet-300 dark:bg-orange-300 rounded-md focus-visible:outline-4"
       >
         {theme === "dark" ? sun : moon}
       </button>
@@ -78,7 +73,7 @@ const App: React.FC = () => {
           <Intro />
           <Portfolio />
           <Timeline />
-          {/* <Contact /> */}
+
           <Footer />
         </div>
       </div>

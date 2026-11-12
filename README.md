@@ -1,3 +1,15 @@
+# Portfolio UI Experiments
+
+**Objetivo:** Estudar layout, tipografia e componentes de uma apresentação pessoal anterior ao BLACKSITE atual.
+
+**Estado:** Protótipo histórico; README anterior baseado no template do Vite.
+
+**Documentação técnica, origem e próximos passos:** [docs/PROJECT_BRIEF.md](docs/PROJECT_BRIEF.md)
+
+---
+
+## Material original preservado
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

@@ -7,6 +7,7 @@ interface Project {
   title: string;
   stack: string[];
   link: string;
+  description: string;
 }
 
 const Portfolio: React.FC = () => {
@@ -20,7 +21,7 @@ const Portfolio: React.FC = () => {
             title={project.title}
             stack={project.stack}
             link={project.link}
-            description={""}          />
+            description={project.description}          />
         ))}
       </div>
     </div>
